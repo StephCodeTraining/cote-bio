@@ -3,5 +3,16 @@
   padding: 0px;
 }
 h1 {
-  text-align: center;
+  color: azure;
+  text-shadow: 2px 2px 3px black;
+  /* text-shadow: -2px -2px 3px black; */
+}
+header {
+  background: center/cover
+    url("C://wamp64/www/training/Evaluations-Studi/site-html-css-bootstrp/ressources/bg-header.png");
+  border-radius: 10px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
 }
