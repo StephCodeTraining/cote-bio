@@ -12,7 +12,21 @@ header {
     url("C://wamp64/www/training/Evaluations-Studi/site-html-css-bootstrp/ressources/bg-header.png");
   border-radius: 10px;
 }
+main {
+  min-height: 500px;
+}
+footer {
+  background-color: black;
+  color: bisque;
+  height: 160px;
+}
 .logo {
   width: 100px;
   height: 100px;
+}
+section {
+  margin-top: 2%;
+}
+p {
+  max-width: 80%;
 }
