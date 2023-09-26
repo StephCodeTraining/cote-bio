@@ -5,28 +5,64 @@
 h1 {
   color: azure;
   text-shadow: 2px 2px 3px black;
-  /* text-shadow: -2px -2px 3px black; */
 }
+
+/* ------------------------ SHADOW */
+.shadow {
+  box-shadow: 2px 2px 5px black;
+}
+/* ------------------------ Class Flex */
+.col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row-even {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* ---------------------- El STRUCTURE */
 header {
   background: center/cover
     url("C://wamp64/www/training/Evaluations-Studi/site-html-css-bootstrp/ressources/bg-header.png");
   border-radius: 10px;
+  height: 30vh;
 }
 main {
   min-height: 500px;
-}
-footer {
-  background-color: black;
-  color: bisque;
-  height: 160px;
-}
-.logo {
-  width: 100px;
-  height: 100px;
 }
 section {
   margin-top: 2%;
 }
 p {
   max-width: 80%;
+}
+footer {
+  margin-top: 10px;
+  background-color: black;
+  color: bisque;
+}
+/*  ---------------------- LOGO & IMAGE */
+.logo {
+  width: 100px;
+  height: 100px;
+}
+img.size {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10%;
+}
+
+/*  ----------------------- Formulaire */
+fieldset {
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px black, -3px -3px 10px black;
+}
+input,
+select,
+textarea {
+  /* border: 0.5px solid rgb(0, 0, 0); */
+  box-shadow: 1px 1px 5px black, -1px -1px 5px black;
 }
