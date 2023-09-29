@@ -10,6 +10,10 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=".\cote-bio.css" />
   </head>
   <body>
@@ -53,118 +57,134 @@
     </header>
       <!-- ------------------------------------------- MAIN -->
       <main class="container">
-        <section >
         <h2 class="mb-3">Passez nous voir !!</h2>
-        <p class="container-fluid row-even">Nous organisons chaque mois des apéritifs gustatifs dans nos locaux ou en plein air. <br> <br>
-          C'est l'occasion de se retrouver, savourer nos spécialitées et échanger. <br> Tout ceci dans une ambiance chaleureuse et bon enfant.<br>
-          <br>
-          Nous sommes également présent sur les marchés, afin de nous présenter et de vendre nos récoltes saisonières. <br> A tres vite !
-        </p>
-        <!-- Cartes Event -->
-        <div class="row d-flex justify-content-evenly align-item-center">
-          <!-- --------------------------------- Aperos Gsttf -->
-          <div class="col-4 col-sm-5 col-lg-3 m-3">
-            <div class="card bg-dark">
-              <img
-                src=".\ressources\img_apero_gustatif.jpg"
-                alt="photo"
-                class="card-img-top border rounded"
-              />
-              <div class="card-body text-light">
-                <h6 class="card-title">Appéro Gustatif</h6>
-                <p class="card-text "> 
-                  <ul class="list-unstyled">
-                    <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                    </svg> Tous les mois</li>
-                </ul> 
-              </p>
-              <button class="btn btn-outline-light " type="button" data-bs-toggle="modal" data-bs-target="#modalApero">
-                Détails
-              </button>
-            </div>
+        <!-- ----------------- Apéros Gustatifs -->
+        <section class="row row-even mb-3" >
+          <!-- Text Présentation -->
+          <div class="col-12 col-md-7 col-center">
+              <h3 class="mb-3">Pour une dégustation ..</h3>
+            <p>Nous organisons chaque mois des apéritifs gustatifs dans nos locaux ou en plein air. <br> <br>
+              C'est l'occasion de se retrouver, savourer nos spécialitées et échanger. <br>
+              <br>
+              Tout ceci dans une ambiance chaleureuse et bon enfant.<br>
+            </p>
           </div>
-          <!-- MODAL appéro gustatif -->
-            <div class="modal" id="modalApero" tabindex="-1" role="dialog" aria-labelledby="idTitle" aria-hidden="true" >
-              <div class="modal-dialog modal-dialog-centered " role="document">
-                <div class="modal-content">
-                  <div class="modal-header ">
-                      <div>
-                        <img
-                        class="logo rounded-circle m-2"
-                        src=".\ressources\logo.png"
-                        alt="Logo"
-                        />
-                      </div>
-                      <div>
-                      <h6 class="text-center ms-4">Appéro Gustatif
-                        <br>
-                        <small>octobre</small>
-                      </h6>
-                      </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+          <!-- Carte Apéro -->
+            <div class="col-9 col-md-5">
+              <div class="card bg-light shadow-bx">
+                <img
+                  src=".\ressources\img_apero_gustatif.jpg"
+                  alt="photo"
+                  class="card-img-top border rounded"
+                />
+                <div class="card-body text-dark ">
+                  <h6 class="card-title">Appéro Gustatif</h6>
+                    <p class="card-text "> 
+                      <ul class="list-unstyled">
+                        <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg> Tous les mois</li>
+                      </ul> 
+                    </p>
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-dark " type="button" data-bs-toggle="modal" data-bs-target="#modalApero">
+                      Détails
+                    </button>
                   </div>
-                  <div class="modal-body">
-                    <!-- Image -->
-                    <div class="container-fluid">
-                      <img class="size" src=".\ressources\img_modal_apero_gustatif.jpg" alt="">
+                </div>
+              </div>
+            <!-- MODAL appéro gustatif -->
+              <div class="modal" id="modalApero" tabindex="-1" role="dialog" aria-labelledby="idTitle" aria-hidden="true" >
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                  <div class="modal-content">
+                    <div class="modal-header ">
+                        <div>
+                          <img
+                          class="logo rounded-circle m-2"
+                          src=".\ressources\logo.png"
+                          alt="Logo"
+                          />
+                        </div>
+                        <div>
+                        <h6 class="text-center ms-4">Appéro Gustatif
+                          <br>
+                          <small>octobre</small>
+                        </h6>
+                        </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
                     </div>
-                    <!-- Détails -->
-                    <div class="container-fluid row row-even mt-3">
-                      <div class="col-5 col-center">
-                      <ul class="list-unstyled ">
+                    <div class="modal-body">
+                      <!-- Image -->
+                      <div class="container-fluid">
+                        <img class="size" src=".\ressources\img_modal_apero_gustatif.jpg" alt="">
+                      </div>
+                      <!-- Détails -->
+                      <div class="container-fluid row row-even mt-3">
+                        <div class="col-5 col-center">
+                        <ul class="list-unstyled ">
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-event" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+                            <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                          </svg> Samedi 14 Octobre</li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg> 12 Rue Mgr Hoch, <br>
+                        67200 Strasbourg</li>
                         <li>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-event" viewBox="0 0 16 16">
-                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
-                          <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                        </svg> Samedi 14 Octobre</li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                          <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                          <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                          <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg> 18 - 21h</li>
                         <li>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                        </svg> 12 Rue Mgr Hoch, <br>
-                      67200 Strasbourg</li>
-                      <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
-                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-                      </svg> 18 - 21h</li>
-                      <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
-                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
-                        <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.492 1.492 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.72.72 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.72.72 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
-                      </svg> Tout Public</li>
-                    </ul>
-                  </div>
-                    <!-- Déscriptif -->
-                    <p class="text-center text-justify  col-5">Nos membres vous attendent pour vous faire découvrir le fruit de leur récolte et vous partager leur amour de la nature</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-outline-dark" type="button" data-bs-dismiss="modal">Fermer</button>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                          <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+                          <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.492 1.492 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.72.72 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.72.72 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+                        </svg> Tout Public</li>
+                      </ul>
+                    </div>
+                      <!-- Déscriptif -->
+                      <p class="text-center text-justify  col-5">Nos membres vous attendent pour vous faire découvrir le fruit de leur récolte et vous partager leur amour de la nature</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-outline-dark" type="button" data-bs-dismiss="modal">Fermer</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <hr>
         <!-- --------------------------------- Marchés -->
-        <div class="col-4 col-sm-5 col-lg-3 m-3">
-          <div class=" card bg-dark">
+        <section class="row row-even mb-3" >
+          <!-- Text Présentation -->
+          <div class="col-12 col-md-7 col-center">
+            <h3 class="mb-3">A nos stands ..</h3>
+            <p>Nous sommes également présent sur les marchés, afin de nous présenter et de vendre nos récoltes saisonières. <br> A tres vite !</p>
+          </div>
+          <!-- Carte marchés -->
+          <div class="col-9 col-md-5">
+          <div class=" card bg-light shadow-bx">
               <img src=".\ressources\img_marché.jpg" alt="photo" class="card-img-top border rounded">
-              <div class="card-body text-light">
+              <div class="card-body text-dark">
             <h6 class="card-title">Marchés</h6>
-            <p class="card-text"> 
-              <ul class="list-unstyled">
-                <li>
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                </svg> Mercredis &amp; Samedis</li>
-              </ul>
-            </p>
-            <button class="btn btn-outline-light" type="button"
+              <p class="card-text " > 
+                <ul class="list-unstyled">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    </svg> Mercredis &amp; Samedis</li>
+                  </ul>
+                </p>
+                <div class="d-flex justify-content-end">
+              <button class="btn btn-outline-dark " type="button"
               data-bs-toggle="modal" data-bs-target="#modalMarche">
               Détails</button>
             </div>
+          </div>
           </div>
         </div>
         <!-- MODAL Marchés -->
@@ -226,7 +246,6 @@
                   </div>
                 </div>
               </div>
-            </div>
           </section>
         </main>
       <!-- ------------------------------------ FOOTER -->

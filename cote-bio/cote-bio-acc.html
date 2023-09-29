@@ -10,11 +10,19 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href=".\cote-bio.css" />
   </head>
   <body>
     <!-- ----------------------------------------------- HEADER -->
     <header>
+      <!-- ------------------ Titre & Logo -->
       <section class="d-flex justify-content-between">
         <!-- ------ Logo -->
         <img
@@ -24,7 +32,7 @@
         />
         <h1 class="m-3">Côté Bio</h1>
       </section>
-      <!-- --------------------------------- NAV -->
+      <!-- ------------------- NAV -->
       <nav class="navbar navbar-dark navbar-expand-sm">
         <div class="container-fluid">
           <h3 href="" class="navbar-brand shadow-txt">Accueil</h3>
@@ -47,9 +55,9 @@
         </div>
       </nav>
     </header>
-    <!-- ----------------------------------------------- MAIN -->
+    <!-- ------------------------------------------------- MAIN -->
     <main class="container">
-      <!--  ----------------------- Présentation -->
+      <!--  ------------------ Présentation -->
       <section>
         <h2>Et vous côté Bio, comment ça se passe ??</h2>
         <div class="justify-content-center align-i tems-center d-flex">
@@ -67,7 +75,7 @@
           </p>
         </div>
       </section>
-      <!-- ------------------------ Paniers -->
+      <!-- ------------------ Paniers -->
       <section class="row justify-content-center align-items-center d-flex">
         <div class="col-md-4 col-center m-4">
           <h3 class="row">Trouvez votre panier !</h3>
@@ -75,16 +83,500 @@
             <li>Récupérez le à notre point relais</li>
             <li>De une à quatre fois par mois</li>
           </ul>
-          <!-- Btn Commande -->
-          <button class="btn btn-outline-dark" type="button">
-            Passer Commande
+          <!-- Btn Réservation -->
+          <button
+            class="btn btn-outline-dark"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modalPanier"
+          >
+            Réserver
           </button>
         </div>
         <div class="col">
           <img class="size" src=".\ressources\img_acc_panier.jpg" alt="" />
         </div>
+        <!-- Modal Panier -->
+        <div
+          class="modal"
+          id="modalPanier"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="idTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-light">
+              <div class="modal-header">
+                <img
+                  class="logo rounded-circle m-2"
+                  src=".\ressources\logo.png"
+                  alt="Logo"
+                />
+                <h6>Reserver mon panier</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Formulaire Reservation -->
+              <div class="modal-body">
+                <div class="container">
+                  <form method="get" action="XXX.php">
+                    <h5>Mon Panier Bio - 12€</h5>
+                    <!-- Input LastName -->
+                    <div class="form-group">
+                      <label for="lastName">Nom</label>
+                      <input type="text" class="form-control" name="lastName" />
+                    </div>
+                    <!-- Input FirstName -->
+                    <div class="form-group">
+                      <label for="firstName">Prénom</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="firstName"
+                      />
+                    </div>
+                    <!-- Input Mail -->
+                    <div class="form-group">
+                      <label for="mail">E-Mail</label>
+                      <input type="email" class="form-control" name="mail" />
+                    </div>
+                    <!-- Select Retrait -->
+                    <div>
+                      <h6>Retrait</h6>
+                      <select
+                        class="form-control"
+                        name="retraitPanier"
+                        id="retraitPanier"
+                      >
+                        <option value="coteBio">
+                          Côté Bio <br />
+                          12 Rue Mgr Hoch
+                        </option>
+                        <option value="greVent">
+                          Au Gré du Vent <br />
+                          83 route de la Wantzenau
+                        </option>
+                        <option value="kucia">
+                          Boulangerie KUCIA <br />
+                          19 place Jean Macé
+                        </option>
+                        <option value="olivierCo">
+                          Oliviers and CO <br />
+                          6 rue du Fossé des Tailleurs
+                        </option>
+                      </select>
+                    </div>
+                    <!-- Detail panier -->
+                    <h6 class="mt-2">Contenu de la semaine</h6>
+                    <div class="row row-even">
+                      <div class="col">
+                        <ul>
+                          <li>1 chou rouge</li>
+                          <li>1 butternut</li>
+                          <li>6 carottes</li>
+                          <li>1 courgette</li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul>
+                          <li>2 poireaux</li>
+                          <li>2 pommes</li>
+                          <li>500g de choucroute cuite</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Infos Prix -->
+                    <h6>Paiement sur place :</h6>
+                    <div class="col-center">
+                      <p>Espèces, Cheques, Carte Bancaire</p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>
+                  <small
+                    >Un mail de confirmation vous sera envoyer aprés la
+                    validation</small
+                  >
+                </p>
+                <button
+                  class="btn btn-outline-dark"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  Valider
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- ------------------------ Potager Perso -->
+      <hr />
+      <!-- ------------------ Idées Recettes -->
+      <section class="row justify-content-center align-items-center d-flex">
+        <div class="col-12 col-md-4">
+          <h3>Idées Recettes :</h3>
+        </div>
+        <div class="col-12 col-md-6">
+          <div id="carouselRecettes" class="carousel slide">
+            <div class="carousel-inner">
+              <!-- Chou Chataigne Pommes -->
+              <div class="carousel-item active">
+                <h4>Chou rouge aux châtaignes et aux pommes</h4>
+                <img
+                  src=".\ressources\recettes\choux-rouge-chataigne-pommes.jpeg"
+                  class="d-block w-100 size"
+                  alt="Recette choux / chataigne / pommes"
+                />
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-outline-dark mt-2"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalRecetteChou"
+                  >
+                    Détails
+                  </button>
+                </div>
+                <!-- Modal Recette Chou -->
+                <div
+                  class="modal"
+                  id="modalRecetteChou"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="idTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content bg-light">
+                      <div class="modal-header">
+                        <img
+                          class="logo rounded-circle m-2"
+                          src=".\ressources\logo.png"
+                          alt="Logo"
+                        />
+                        <h6>
+                          Chou rouge aux châtaignes <br />
+                          et aux pommes
+                        </h6>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ingrédients -->
+                        <h5>Ingrédients :</h5>
+                        <div class="row row-even">
+                          <div class="col-5">
+                            <ul>
+                              <li>3 pommes</li>
+                              <li>1 chou rouge</li>
+                              <li>24 châtaignes</li>
+                              <li>2 oignons</li>
+                              <li>50 g de beurre</li>
+                            </ul>
+                          </div>
+                          <div class="col-5">
+                            <ul>
+                              <li>3 morceaux de sucre</li>
+                              <li>10 cl de vin rouge</li>
+                              <li>1 filet de vinaigre</li>
+                              <li>poivre</li>
+                              <li>sel</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr />
+                        <!-- Préparation -->
+                        <h5>Préparation :</h5>
+                        <div class="row row-even">
+                          <p>
+                            Nettoyer le chou rouge, lui couper le trognon et lui
+                            retirer les côtes épaisses avant de l'émincer. Peler
+                            et émincer les oignons. <br />
+                            <br />
+                            Dans une cocotte, 30 g de beurre saindoux, puis
+                            ajouter le chou rouge et les oignons. Laisser cuire
+                            15 min sans cesser de remuer puis saler et poivrer.
+                            <br />
+                            <br />
+                            Ajouter ensuite les morceaux de sucre, puis mouiller
+                            de vinaigre et de vin avant de couvrir. Laisser
+                            mijoter 45 min à couvert sur feu doux.
+                            <br />
+                            <br />
+                            Pendant ce temps, éplucher les châtaignes et
+                            détailler les pommes en dés après les avoir pelées.
+                            <br />
+                            <br />
+                            Les faire revenir ensemble dans une sauteuse avec le
+                            reste de beurre puis laisser cuire 45 min également.
+                            Les mettre avec le chou à la fin de la cuisson.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-outline-dark"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navet Glacé Miel -->
+              <div class="carousel-item">
+                <h4>Navets jaunes glacés au miel</h4>
+                <img
+                  src=".\ressources\recettes\navets-glaces-au-miel.jpeg"
+                  class="d-block w-100 size"
+                  alt="Recette choux / chataigne / pommes"
+                />
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-outline-dark mt-2"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalNavet"
+                  >
+                    Détails
+                  </button>
+                </div>
+                <!-- Modal Recette Navet -->
+                <div
+                  class="modal"
+                  id="modalNavet"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="idTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content bg-light">
+                      <div class="modal-header">
+                        <img
+                          class="logo rounded-circle m-2"
+                          src=".\ressources\logo.png"
+                          alt="Logo"
+                        />
+                        <h6>Navets jaunes glacés au miel</h6>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ingrédients -->
+                        <h5>Ingrédients :</h5>
+                        <div class="row row-even">
+                          <div class="col-5">
+                            <ul>
+                              <li>12 petits navets jaunes</li>
+                              <li>30 g de beurre</li>
+                            </ul>
+                          </div>
+                          <div class="col-5">
+                            <ul>
+                              <li>1 cuillère à soupe de miel</li>
+                              <li>1 cuillère à café de vinaigre de xérès</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr />
+                        <!-- Préparation -->
+                        <h5>Préparation :</h5>
+                        <div class="row row-even">
+                          <p>
+                            Nettoyez les navets.
+                            <br />
+                            <br />
+                            Faites-les cuire 5 à 10 mn dans une casserole d'eau
+                            bouillante salée ou le temps qu'ils soient cuits
+                            mais fermes à coeur.
+                            <br />
+                            <br />
+                            Egouttez-les et passez-les sous l'eau froide.
+                            <br />
+                            <br />
+                            Faites fondre le beurre dans une poêle, ajoutez les
+                            navets et le miel.
+                            <br />
+                            <br />
+                            Faites-les revenir sur feu moyen en les remuant 5
+                            mn, ajoutez le vinaigre et laissez colorer encore 5
+                            mn. Salez, poivrez.
+                            <br />
+                            <br />
+                            Servez aussitôt.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-outline-dark"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Butternut Chèvre -->
+              <div class="carousel-item">
+                <h4>Butternut farcie au chèvre, thym et ail</h4>
+                <img
+                  src=".\ressources\recettes\butternut-farcie.jpg"
+                  class="d-block w-100 size"
+                  alt="Recette choux / chataigne / pommes"
+                />
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-outline-dark mt-2"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalButternut"
+                  >
+                    Détails
+                  </button>
+                </div>
+                <!-- Modal Butternut -->
+                <div
+                  class="modal"
+                  id="modalButternut"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="idTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content bg-light">
+                      <div class="modal-header">
+                        <img
+                          class="logo rounded-circle m-2"
+                          src=".\ressources\logo.png"
+                          alt="Logo"
+                        />
+                        <h6>Courge butternut farcie au chèvre, thym et ail</h6>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ingrédients -->
+                        <h5>Ingrédients :</h5>
+                        <div class="row row-even">
+                          <div class="col-5">
+                            <ul>
+                              <li>1 courge butternut</li>
+                              <li>1 fromage de chèvre</li>
+                              <li>20 cl de crème</li>
+                            </ul>
+                          </div>
+                          <div class="col-5">
+                            <ul>
+                              <li>2 gousses d'ail</li>
+                              <li>1 branche de thym</li>
+                              <li>1 poivre du moulin</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr />
+                        <!-- Préparation -->
+                        <h5>Préparation :</h5>
+                        <div class="row row-even">
+                          <p>
+                            Préchauffer le four à 180°C (thermostat 6)
+                            <br /><br />
+                            Couper la courge 2 et l'évider (creuser de sorte à
+                            former 2 petites cavités).
+                            <br /><br />
+                            Couper le fromage en morceaux.
+                            <br /><br />
+                            Éplucher et hacher finement les gousses d'ail.
+                            <br /><br />
+                            Mélanger le fromage avec la crème, l'ail, le thym et
+                            le poivre.
+                            <br /><br />
+                            Verser la préparation dans les cavités de la courge.
+                            <br /><br />
+                            Déposer les 2 moitiés de courge sur une plaque
+                            recouverte de papier cuisson et enfourner 1h.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-outline-dark"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselRecettes"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselRecettes"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- ------------------ Potager Perso -->
       <section
         class="mt-3 row justify-content-center align-items-center d-flex"
       >
