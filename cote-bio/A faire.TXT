@@ -1,8 +1,2 @@
-Nm asso : Côté Bio
-Activité : Culture & Livraison Produits Bio
-Localisation : France, Alsace
-Services : Livraison, 
-Evenements : Appéro dégustation 
-Adhésion : Tout le monde
-Tâches Membres : Entretient potager, préparation panier, 
+Mobile First : !! Galaxy Fold = taille police à modifier
 

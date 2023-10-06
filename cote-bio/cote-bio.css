@@ -28,21 +28,26 @@ h1 {
   justify-content: space-evenly;
 }
 /* ---------------------- El STRUCTURE */
+body {
+  background: linear-gradient(white, black);
+}
 header {
   background: center/cover url("./ressources/bg-header.png");
   border-radius: 10px;
-  height: 30vh;
 }
+
 main {
   min-height: 500px;
   margin-top: 2%;
+  border-radius: 20px;
+  background-color: aliceblue;
 }
 p {
   max-width: 80%;
 }
 footer {
   margin-top: 10px;
-  background-color: black;
+  background: linear-gradient(#242424cc, black);
   color: bisque;
 }
 /*  ---------------------- LOGO & IMAGE */
@@ -60,6 +65,14 @@ footer {
   height: 50%;
   min-height: 200px;
 }
+.contact-head {
+  background: center/cover url("./ressources/contact_symbols.jpeg");
+  height: 20vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 
 /*  ----------------------- Formulaire */
 fieldset {
@@ -71,4 +84,11 @@ select,
 textarea {
   /* border: 0.5px solid rgb(0, 0, 0); */
   box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+}
+/*  ------------------------- Bg Page */
+.contact-bg {
+  background: radial-gradient(#839ba5, white);
+}
+.contact-bg-reverse {
+  background: radial-gradient(white, #8fa6ae, white);
 }

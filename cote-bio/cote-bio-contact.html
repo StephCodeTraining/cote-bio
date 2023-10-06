@@ -29,15 +29,18 @@
           src=".\ressources\logo.png"
           alt="Logo"
         />
-        <h1 class="m-3">Côté Bio</h1>
+        <div>
+          <h1 class="m-3">Côté Bio</h1>
+          <br />
+        </div>
       </section>
       <!-- --------------------------------- NAV -->
-      <nav class="navbar navbar-dark navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
-          <h3 href="" class="navbar-brand shadow-txt">Contact</h3>
+          <h3 class="navbar-brand text-light shadow-txt">Contact</h3>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href=".\cote-bio-acc.html" class="nav-link shadow-txt">
+              <a href=".\cote-bio-acc.html" class="nav-link">
                 <button class="btn btn-outline-light shadow-txt">
                   Accueil
                 </button>
@@ -55,13 +58,15 @@
       </nav>
     </header>
     <!-- ----------------------------------------------- MAIN -->
-    <main class="container">
-      <section class="container-fluid row row-even">
-        <h2>Ecrivez nous :</h2>
+    <main class="container p-0 contact-bg-reverse">
+      <div class="contact-head">
+        <h2 class="text-light m-2">Ecrivez nous :</h2>
+      </div>
+      <section class="m-0 p-2 row row-even">
         <!-- Formulaire -->
-        <div class="col col-sm-9 col-md-6 text-dark">
-          <form class="m-3 p-3" method="get" action="XXX.php">
-            <fieldset class="p-3 bg-light">
+        <div class="m-1 p-1 col-11 col-sm-10 col-md-5 text-dark">
+          <form method="get" action="XXX.php">
+            <fieldset class="p-3 contact-bg">
               <legend>Formulaire</legend>
               <!-- Input txt -->
               <div class="form-group">
@@ -142,7 +147,9 @@
           </form>
         </div>
         <!-- Infos Contact -->
-        <div class="col-sm-12 col-md-6 col-center">
+        <div
+          class="m-1 p-1 col-11 col-sm-10 col-md-6 col-center contact-bg rounded-5"
+        >
           <div class="col-center">
             <h5>Infos Contact</h5>
             <ul class="list-unstyled">
