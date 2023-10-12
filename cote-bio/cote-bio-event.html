@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=".\cote-bio.css" />
   </head>
-  <body>
+  <body class="event-bg">
     <!-- ----------------------------------------------- HEADER -->
     <header>
       <section class="d-flex justify-content-between">
@@ -56,10 +56,10 @@
       </nav>
     </header>
       <!-- ------------------------------------------- MAIN -->
-      <main class="container">
-        <h2 class="mb-3">Passez nous voir !!</h2>
+      <main class="container mt-0  rounded event-bg">
         <!-- ----------------- Apéros Gustatifs -->
-        <section class="row row-even mb-3" >
+        <section class="row row-even p-2 event-bg rounded" >
+        <h2 class="mb-3">Passez nous voir !!</h2>
           <!-- Text Présentation -->
           <div class="col-12 col-md-7 col-center">
               <h3 class="mb-3">Pour une dégustation ..</h3>
@@ -71,7 +71,7 @@
           </div>
           <!-- Carte Apéro -->
             <div class="col-9 col-md-5">
-              <div class="card bg-light shadow-bx">
+              <div class="card bg-light shadow-bx  event-bg">
                 <img
                   src=".\ressources\img_apero_gustatif.jpg"
                   alt="photo"
@@ -93,10 +93,11 @@
                   </div>
                 </div>
               </div>
-            <!-- MODAL appéro gustatif -->
+            </div>
+            <!-- MODAL Apéro -->
               <div class="modal" id="modalApero" tabindex="-1" role="dialog" aria-labelledby="idTitle" aria-hidden="true" >
                 <div class="modal-dialog modal-dialog-centered " role="document">
-                  <div class="modal-content">
+                  <div class="modal-content event-bg-reverse">
                     <div class="modal-header ">
                         <div>
                           <img
@@ -155,19 +156,17 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>
-        <hr>
         <!-- --------------------------------- Marchés -->
-        <section class="row row-even mb-3" >
+        <section class="row row-even rounded p-2 event-bg" >
           <!-- Text Présentation -->
           <div class="col-12 col-md-7 col-center">
             <h3 class="mb-3">A nos stands ..</h3>
             <p>Nous sommes également présent sur les marchés, afin de nous présenter et de vendre nos récoltes saisonières. <br> A tres vite !</p>
           </div>
-          <!-- Carte marchés -->
+          <!-- Carte Marchés -->
           <div class="col-9 col-md-5">
-          <div class=" card bg-light shadow-bx">
+          <div class=" card bg-light shadow-bx  event-bg">
               <img src=".\ressources\img_marché.jpg" alt="photo" class="card-img-top border rounded">
               <div class="card-body text-dark">
             <h6 class="card-title">Marchés</h6>
@@ -190,7 +189,7 @@
         <!-- MODAL Marchés -->
           <div class="modal" id="modalMarche" tabindex="-1" role="dialog" aria-labelledby="idTitle" aria-hidden="true" >
             <div class="modal-dialog modal-dialog-centered " role="document">
-              <div class="modal-content bg-light">
+              <div class="modal-content event-bg-reverse">
                 <div class="modal-header">
                   <img
                     class="logo rounded-circle m-2"
@@ -249,7 +248,7 @@
           </section>
         </main>
       <!-- ------------------------------------ FOOTER -->
-      <footer>
+      <footer class="mt-0 event-bg">
         <div class="row-even ">
           <!-- Contact -->
           <div class="col-center pt-2">

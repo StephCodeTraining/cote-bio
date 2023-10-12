@@ -28,27 +28,21 @@ h1 {
   justify-content: space-evenly;
 }
 /* ---------------------- El STRUCTURE */
-body {
-  background: linear-gradient(white, black);
-}
 header {
   background: center/cover url("./ressources/bg-header.png");
   border-radius: 10px;
+  height: 40vh;
 }
 
 main {
   min-height: 500px;
   margin-top: 2%;
-  border-radius: 20px;
-  background-color: aliceblue;
 }
 p {
   max-width: 80%;
 }
 footer {
-  margin-top: 10px;
-  background: linear-gradient(#242424cc, black);
-  color: bisque;
+  color: black;
 }
 /*  ---------------------- LOGO & IMAGE */
 .logo {
@@ -67,8 +61,7 @@ footer {
 }
 .contact-head {
   background: center/cover url("./ressources/contact_symbols.jpeg");
-  height: 20vw;
-  border-radius: 20px;
+  height: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -86,9 +79,21 @@ textarea {
   box-shadow: 1px 1px 5px black, -1px -1px 5px black;
 }
 /*  ------------------------- Bg Page */
+.accueil-bg {
+  background: radial-gradient(brown, white);
+}
+.accueil-bg-reverse {
+  background: radial-gradient(white, brown);
+}
+.event-bg {
+  background: radial-gradient(darkgreen, white);
+}
+.event-bg-reverse {
+  background: radial-gradient(white, darkgreen);
+}
 .contact-bg {
   background: radial-gradient(#839ba5, white);
 }
 .contact-bg-reverse {
-  background: radial-gradient(white, #8fa6ae, white);
+  background: radial-gradient(white, #8fa6ae);
 }
