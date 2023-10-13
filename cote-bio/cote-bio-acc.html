@@ -38,7 +38,7 @@
           <h3 href="" class="navbar-brand shadow-txt">Accueil</h3>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href=".\cote-bio-event.html" class="nav-link shadow-txt">
+              <a href=".\cote-bio-event.html" class="nav-link">
                 <button class="btn btn-outline-light shadow-txt">
                   Evénements
                 </button>
@@ -77,9 +77,9 @@
       </section>
       <!-- ------------------ Paniers -->
       <section
-        class="row justify-content-center align-items-center d-flex accueil-bg m-0 mt-0 pb-1 rounded"
+        class="row justify-content-center align-items-center d-flex accueil-bg m-0 pt-2 pb-1 rounded"
       >
-        <div class="col-md-4 col-center">
+        <div class="col-12 col-md-4 col-center pb-2">
           <h3 class="row">Trouvez votre panier !</h3>
           <ul>
             <li>Récupérez le à notre point relais</li>
@@ -87,7 +87,7 @@
           </ul>
           <!-- Btn Réservation -->
           <button
-            class="btn btn-outline-dark"
+            class="btn btn-outline-light text-dark"
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#modalPanier"
@@ -95,7 +95,7 @@
             Réserver
           </button>
         </div>
-        <div class="col col-center">
+        <div class="col col-md-6 col-center">
           <img class="size" src=".\ressources\img_acc_panier.jpg" alt="" />
         </div>
         <!-- Modal Panier -->
@@ -108,7 +108,7 @@
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-light">
+            <div class="modal-content accueil-bg-reverse">
               <div class="modal-header">
                 <img
                   class="logo rounded-circle m-2"
@@ -223,7 +223,7 @@
       <section
         class="row justify-content-center align-items-center d-flex accueil-bg m-0 pt-2 pb-1 rounded"
       >
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 col-center">
           <h3>Idées Recettes :</h3>
         </div>
         <div class="col-12 col-md-6">
@@ -231,15 +231,19 @@
             <div class="carousel-inner">
               <!-- Chou Chataigne Pommes -->
               <div class="carousel-item active">
-                <h4>Chou rouge aux châtaignes et aux pommes</h4>
-                <img
-                  src=".\ressources\recettes\choux-rouge-chataigne-pommes.jpeg"
-                  class="d-block w-100 size"
-                  alt="Recette choux / chataigne / pommes"
-                />
-                <div class="d-flex justify-content-center">
+                <h4 class="text-center">
+                  Chou rouge aux châtaignes et aux pommes
+                </h4>
+                <div class="col-center">
+                  <img
+                    src=".\ressources\recettes\choux-rouge-chataigne-pommes.jpeg"
+                    class="d-block w-100 size"
+                    alt="Recette choux / chataigne / pommes"
+                  />
+                </div>
+                <div class="d-flex justify-content-center pb-2">
                   <button
-                    class="btn btn-outline-dark mt-2"
+                    class="btn btn-outline-light mt-2"
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#modalRecetteChou"
@@ -260,7 +264,7 @@
                     class="modal-dialog modal-dialog-centered"
                     role="document"
                   >
-                    <div class="modal-content bg-light">
+                    <div class="modal-content accueil-bg-reverse">
                       <div class="modal-header">
                         <img
                           class="logo rounded-circle m-2"
@@ -345,15 +349,17 @@
               </div>
               <!-- Navet Glacé Miel -->
               <div class="carousel-item">
-                <h4>Navets jaunes glacés au miel</h4>
-                <img
-                  src=".\ressources\recettes\navets-glaces-au-miel.jpeg"
-                  class="d-block w-100 size"
-                  alt="Recette choux / chataigne / pommes"
-                />
-                <div class="d-flex justify-content-center">
+                <h4 class="text-center">Navets jaunes glacés au miel</h4>
+                <div class="col-center">
+                  <img
+                    src=".\ressources\recettes\navets-glaces-au-miel.jpeg"
+                    class="d-block w-100 size"
+                    alt="Recette choux / chataigne / pommes"
+                  />
+                </div>
+                <div class="d-flex justify-content-center pb-2">
                   <button
-                    class="btn btn-outline-dark mt-2"
+                    class="btn btn-outline-light mt-2"
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#modalNavet"
@@ -374,7 +380,7 @@
                     class="modal-dialog modal-dialog-centered"
                     role="document"
                   >
-                    <div class="modal-content bg-light">
+                    <div class="modal-content accueil-bg-reverse">
                       <div class="modal-header">
                         <img
                           class="logo rounded-circle m-2"
@@ -450,15 +456,19 @@
               </div>
               <!-- Butternut Chèvre -->
               <div class="carousel-item">
-                <h4>Butternut farcie au chèvre, thym et ail</h4>
-                <img
-                  src=".\ressources\recettes\butternut-farcie.jpg"
-                  class="d-block w-100 size"
-                  alt="Recette choux / chataigne / pommes"
-                />
-                <div class="d-flex justify-content-center">
+                <h4 class="text-center">
+                  Butternut farcie au chèvre, thym et ail
+                </h4>
+                <div class="col-center">
+                  <img
+                    src=".\ressources\recettes\butternut-farcie.jpg"
+                    class="d-block w-100 size"
+                    alt="Recette choux / chataigne / pommes"
+                  />
+                </div>
+                <div class="d-flex justify-content-center pb-2">
                   <button
-                    class="btn btn-outline-dark mt-2"
+                    class="btn btn-outline-light mt-2"
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#modalButternut"
@@ -479,7 +489,7 @@
                     class="modal-dialog modal-dialog-centered"
                     role="document"
                   >
-                    <div class="modal-content bg-light">
+                    <div class="modal-content accueil-bg-reverse">
                       <div class="modal-header">
                         <img
                           class="logo rounded-circle m-2"
@@ -582,18 +592,18 @@
       <section
         class="row justify-content-center align-items-center d-flex accueil-bg m-0 mt-0 pt-2 pb-1 rounded"
       >
-        <div class="col-md-4 col-center m-4">
+        <div class="col-md-4 col-center pb-2">
           <h3 class="row">Lancez vous !</h3>
           <ul>
             <li>Créer votre propre potager</li>
             <li>Bénéficer de l'aide de nos membres</li>
           </ul>
           <!-- Btn Commande -->
-          <button class="btn btn-outline-dark" type="button">
+          <button class="btn btn-outline-light text-dark" type="button">
             C'est partit
           </button>
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-6 col-center">
           <img class="size" src=".\ressources\img_acc_potager.jpg" alt="" />
         </div>
       </section>

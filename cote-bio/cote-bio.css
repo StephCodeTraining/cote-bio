@@ -9,11 +9,20 @@ h1 {
 }
 
 /* ------------------------ SHADOW */
-.shadow-bx {
+.shadow-bx,
+button.btn {
   box-shadow: 2px 2px 5px black;
 }
 .shadow-txt {
   text-shadow: 1px 1px 2px black;
+}
+h3.navbar-brand,
+a.nav-link .btn {
+  text-shadow: 1px 0px 2px black, -1px 0px 2px black;
+  color: aliceblue;
+}
+button.btn-outline-light {
+  color: black;
 }
 /* ------------------------ Class Flex */
 .col-center {
@@ -31,7 +40,6 @@ h1 {
 header {
   background: center/cover url("./ressources/bg-header.png");
   border-radius: 10px;
-  height: 40vh;
 }
 
 main {
@@ -44,14 +52,15 @@ p {
 footer {
   color: black;
 }
+
 /*  ---------------------- LOGO & IMAGE */
 .logo {
   width: 100px;
   height: 100px;
 }
 .size {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
   border-radius: 10%;
 }
 .map {
@@ -96,4 +105,45 @@ textarea {
 }
 .contact-bg-reverse {
   background: radial-gradient(white, #8fa6ae);
+}
+/* -------------------------- Merdia Query */
+@media screen and (max-width: 500px) {
+  /* FONT SIZE */
+  p,
+  li {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  /* IMG */
+  .size {
+    max-width: 70%;
+    max-height: 70%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  /* FONT SIZE */
+  p,
+  li {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    max-width: 95%;
+  }
 }
